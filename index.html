@@ -13,6 +13,7 @@
             font-family: "Trirong", serif;
         }
     </style>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,13 +22,41 @@
     </div>
     <div class="formcont">
         <div class="formtop">
-            This is not a real online service! ecneiocniewovbhweionvioabvseiobv vujbvikwnhvikdn
+            <div>This is not a real online service! ecneiocniewovbhweionvioabvseiobv vujbvikwnhvikdn bvuewbvionseovwe.</div>
+            <div>You <em>know</em> you want to.</div>
         </div>
         <div class="mainformcont">
-
+            <div style="margin-left: 5%;">Let's Do This!</div>
+            <form action="ieovne.nin" method="post" class="form">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="num">Phone Number</label>
+                    <input type="tel" name="num" id="num" pattern="[0-9]{*}-[0-9]{*}-[0-9]{*}" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required>
+                </div>
+                <button type="submit" class="submit">Create Account</button>
+            </form>
         </div>
         <div class="formbot">
-
+            Already have an account? <a href="index.html">Log In</a>
         </div>
     </div>
 </body>
