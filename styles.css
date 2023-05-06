@@ -1,0 +1,20 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+
+.imgcont {
+    height: 100%;
+    width: 40%;
+    min-width: 40%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.imgcont img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
