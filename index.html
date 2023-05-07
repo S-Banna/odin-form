@@ -26,15 +26,15 @@
             <div>You <em>know</em> you want to.</div>
         </div>
         <div class="mainformcont">
-            <div style="margin-left: 5%;">Let's Do This!</div>
-            <form action="ieovne.nin" method="post" class="form">
+            <div style="margin-left: 5%; color: rgba(20, 20, 20, 0.911); font-weight: 900;">Let's Do This!</div>
+            <form action="ieovne.nin" method="post" id="form">
                 <div>
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" id="fname" required>
+                    <input type="text" name="fname" id="fname" minlength="1" required>
                 </div>
                 <div>
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname" id="lname" required>
+                    <input type="text" name="lname" id="lname" minlength="1" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
@@ -52,7 +52,7 @@
                     <label for="confirm_password">Confirm Password</label>
                     <input type="password" name="confirm_password" id="confirm_password" required>
                 </div>
-                <button type="submit" class="submit">Create Account</button>
+                <button type="submit" class="submit" id="submit">Create Account</button>
             </form>
         </div>
         <div class="formbot">

@@ -25,11 +25,12 @@ body {
     background-color: rgb(235, 235, 235);
     max-width: 60%;
 }
+
 .formtop {
     height: 19%;
     display: flex;
     flex-direction: column;
-    margin: 10% 10% 0% 10%;
+    margin: 10% 10% 0% 5%;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -43,14 +44,14 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-.form {
+#form {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 40%;
     gap: 5%;
 }
 
-.form>div {
+#form>div {
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
@@ -62,19 +63,32 @@ body {
     flex-basis: 40%;
 }
 
-.formbot {
-    height: 35%;
-}
-
 .submit {
     position: relative;
     left: 5%;
     margin-top: 5%;
     width: 20%;
-    min-height: 15%;
+    padding: 1%;
+    border-color: rgba(201, 185, 185, 0.87);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .formbot {
     margin-top: 10%;
     margin-left: 5%;
+}
+
+#form>div>input {
+    border-color: rgba(196, 196, 196, 0.521);
+    border-radius: 4px;
+}
+
+#form>div>label {
+    color: rgba(32, 32, 32, 0.884);
+}
+
+#form.submitted input:invalid {
+    border: 2px solid rgba(255, 0, 0, 0.418);
 }
